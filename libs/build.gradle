@@ -2,11 +2,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.hulk910'
 android {
-    compileSdkVersion 32
+    compileSdkVersion 30
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 32
+        minSdkVersion 21
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 

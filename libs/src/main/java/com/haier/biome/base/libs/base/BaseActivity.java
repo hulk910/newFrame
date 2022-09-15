@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.SparseArray;
 import android.view.KeyEvent;
 import android.view.ViewGroup;
@@ -32,7 +33,6 @@ public abstract class BaseActivity<T extends ViewDataBinding> extends AppCompatA
 implements ActivityAction, ClickAction,
         HandlerAction, BundleAction, KeyboardAction {
 
-    protected String TAG = this.getLocalClassName();
     protected T mBinding;
     /** Activity 回调集合 */
     private SparseArray<OnActivityCallback> mActivityCallbacks;
